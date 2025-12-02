@@ -3,308 +3,328 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Umbralys - MMORPG Minecraft Bedrock</title>
+    <meta name="description" content="Umbralys - MMORPG Medieval para Minecraft Bedrock">
+    <meta name="keywords" content="Minecraft, Bedrock, MMORPG, RPG, Servidor, Umbralys">
+    <title>Umbralys - MMORPG Medieval</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- NAVEGAÇÃO -->
+    <!-- HEADER -->
     <header class="header">
-        <div class="nav-container">
+        <div class="container">
             <div class="logo">
-                <h1>⚔ UMBRALYS ⚔</h1>
-                <p class="tagline">Medieval MMORPG para Minecraft Bedrock</p>
+                <img src="assets/logo.png" alt="Umbralys Logo" onerror="this.style.display='none'">
+                <h1>UMBRALYS</h1>
             </div>
-            <nav class="navbar">
-                <button class="nav-btn active" data-page="home">🏠 Início</button>
-                <button class="nav-btn" data-page="reinos">👑 Reinos</button>
-                <button class="nav-btn" data-page="classes">⚔ Classes</button>
-                <button class="nav-btn" data-page="racas">👤 Raças</button>
-                <button class="nav-btn" data-page="guia">📖 Guia</button>
-                <button class="nav-btn" data-page="loja">💎 Loja VIP</button>
-                <button class="nav-btn" data-page="contato">📧 Contato</button>
-                <button class="admin-btn" id="adminToggle">⚙️</button>
+            <nav class="nav">
+                <button class="nav-btn" data-page="home">Início</button>
+                <button class="nav-btn" data-page="reinos">Reinos</button>
+                <button class="nav-btn" data-page="classes">Classes</button>
+                <button class="nav-btn" data-page="racas">Raças</button>
+                <button class="nav-btn" data-page="guia">Guia</button>
+                <button class="nav-btn" data-page="loja">Loja VIP</button>
+                <button class="nav-btn" data-page="contato">Contato</button>
             </nav>
+            <button class="menu-toggle" aria-label="Menu">☰</button>
         </div>
     </header>
 
-    <!-- PÁGINAS PRINCIPAIS -->
-    <main class="main-content">
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu">
+        <button class="mobile-nav-btn" data-page="home">Início</button>
+        <button class="mobile-nav-btn" data-page="reinos">Reinos</button>
+        <button class="mobile-nav-btn" data-page="classes">Classes</button>
+        <button class="mobile-nav-btn" data-page="racas">Raças</button>
+        <button class="mobile-nav-btn" data-page="guia">Guia</button>
+        <button class="mobile-nav-btn" data-page="loja">Loja VIP</button>
+        <button class="mobile-nav-btn" data-page="contato">Contato</button>
+    </div>
 
-        <!-- PÁGINA HOME -->
+    <!-- MAIN CONTENT -->
+    <main class="main">
+        <!-- HOME PAGE -->
         <section id="home" class="page active">
             <div class="hero">
-                <h2>Bem-vindo ao Reino Obscuro</h2>
-                <p class="hero-text">Um mundo épico de magia, combate e aventura aguarda você</p>
-            </div>
-
-            <div class="info-section">
-                <h3>⚡ Diferenciais Umbralys</h3>
-                <ul class="features-list">
-                    <li>✦ Addons próprios e sistemas exclusivos</li>
-                    <li>✦ 8 classes únicas com habilidades especiais</li>
-                    <li>✦ 4 reinos com histórias épicas</li>
-                    <li>✦ Sistema de progressão profundo</li>
-                    <li>✦ Economia baseada em moedas</li>
-                    <li>✦ Clãs e sistema social completo</li>
-                </ul>
-            </div>
-
-            <div class="version-info">
-                <h3>📱 Compatibilidade</h3>
-                <p id="mcVersion">Minecraft Bedrock: <strong id="bedrocVersion">Última versão</strong></p>
-                <div class="compatibility-icons">
-                    <div class="compat-item">🎮 Xbox</div>
-                    <div class="compat-item">💻 PC Windows</div>
-                    <div class="compat-item">📱 Mobile</div>
-                    <div class="compat-item">🖥️ PlayStation</div>
-                    <div class="compat-item">📲 Tablet</div>
-                    <div class="compat-item">🎯 Portáteis</div>
+                <div class="hero-content">
+                    <h2 class="hero-title">BEM-VINDO AO UMBRALYS</h2>
+                    <p class="hero-subtitle">MMORPG Medieval para Minecraft Bedrock</p>
+                    <p class="hero-version" id="minecraftVersion">Versão: Minecraft Bedrock Mais Recente</p>
+                    <div class="hero-buttons">
+                        <a href="#" class="btn btn-primary" id="discordBtn">Entrar no Discord</a>
+                        <button class="btn btn-secondary" data-page="guia">Guia de Início</button>
+                    </div>
                 </div>
             </div>
 
-            <div class="community-section">
-                <h3>🌐 Comunidade Umbralys</h3>
-                <div class="social-links">
-                    <a href="https://discord.gg/W9BHqwwFq4" target="_blank" class="social-btn discord">
-                        <span>💜</span> Discord
-                    </a>
-                    <a href="https://www.instagram.com/umbralys45/" target="_blank" class="social-btn instagram">
-                        <span>📸</span> Instagram
-                    </a>
-                    <a href="https://www.tiktok.com/@umbraly_severofis_from_webapp=1&sender_device=pc" target="_blank" class="social-btn tiktok">
-                        <span>🎵</span> TikTok
-                    </a>
-                    <a href="https://www.youtube.com/@UmbralyOFC" target="_blank" class="social-btn youtube">
-                        <span>📺</span> YouTube
-                    </a>
-                </div>
+            <div class="container">
+                <!-- DIFERENCIAIS -->
+                <section class="section">
+                    <h3 class="section-title">Por que jogar Umbralys?</h3>
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">⚔️</div>
+                            <h4>Addons Exclusivos</h4>
+                            <p>Sistemas e mecânicas desenvolvidos especialmente para o servidor</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">📜</div>
+                            <h4>Scripts Autorais</h4>
+                            <p>Programação personalizada para experiência única</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">🏰</div>
+                            <h4>4 Reinos Épicos</h4>
+                            <p>Escolha sua facção e domine o mundo</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">🎭</div>
+                            <h4>8 Classes Únicas</h4>
+                            <p>Especialize-se e desenvolva habilidades poderosas</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- COMPATIBILIDADE -->
+                <section class="section">
+                    <h3 class="section-title">Compatível com Todas as Plataformas</h3>
+                    <div class="platforms">
+                        <div class="platform-icon" title="PlayStation">🎮 PS</div>
+                        <div class="platform-icon" title="Xbox">🎮 Xbox</div>
+                        <div class="platform-icon" title="PC">💻 PC</div>
+                        <div class="platform-icon" title="Mobile">📱 Mobile</div>
+                        <div class="platform-icon" title="Tablet">📱 Tablet</div>
+                        <div class="platform-icon" title="Nintendo Switch">🎮 Switch</div>
+                    </div>
+                </section>
+
+                <!-- ESTATÍSTICAS -->
+                <section class="section">
+                    <h3 class="section-title">Estatísticas do Servidor</h3>
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-value" id="statPlayers">---</div>
+                            <div class="stat-label">Jogadores Registrados</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-value" id="statOnline">Em Breve</div>
+                            <div class="stat-label">Status do Servidor</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-value">4</div>
+                            <div class="stat-label">Reinos</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-value">8</div>
+                            <div class="stat-label">Classes</div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- REDES SOCIAIS -->
+                <section class="section">
+                    <h3 class="section-title">Junte-se à Comunidade</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-btn discord" id="socialDiscord" target="_blank" rel="noopener">
+                            <span class="social-icon">💬</span>
+                            <span>Discord</span>
+                        </a>
+                        <a href="#" class="social-btn instagram" id="socialInstagram" target="_blank" rel="noopener">
+                            <span class="social-icon">📷</span>
+                            <span>Instagram</span>
+                        </a>
+                        <a href="#" class="social-btn tiktok" id="socialTiktok" target="_blank" rel="noopener">
+                            <span class="social-icon">🎵</span>
+                            <span>TikTok</span>
+                        </a>
+                        <a href="#" class="social-btn youtube" id="socialYoutube" target="_blank" rel="noopener">
+                            <span class="social-icon">📺</span>
+                            <span>YouTube</span>
+                        </a>
+                    </div>
+                </section>
             </div>
         </section>
 
-        <!-- PÁGINA REINOS -->
+        <!-- REINOS PAGE -->
         <section id="reinos" class="page">
-            <h2>👑 Os 4 Reinos</h2>
-            <p class="section-desc">Escolha seu destino entre os reinos lendários</p>
-            <div class="cards-grid" id="reiUltimosContainer"></div>
+            <div class="container">
+                <h2 class="page-title">Reinos de Umbralys</h2>
+                <p class="page-subtitle">Escolha sua facção e lute pela supremacia</p>
+                <div id="reinosGrid" class="cards-grid"></div>
+            </div>
         </section>
 
-        <!-- PÁGINA CLASSES -->
+        <!-- CLASSES PAGE -->
         <section id="classes" class="page">
-            <h2>⚔ Escolha Sua Classe</h2>
-            <p class="section-desc">8 classes únicas com poderes especiais</p>
-            <div class="cards-grid" id="classesContainer"></div>
+            <div class="container">
+                <h2 class="page-title">Classes</h2>
+                <p class="page-subtitle">Especialize-se e domine o campo de batalha</p>
+                <div id="classesGrid" class="cards-grid"></div>
+            </div>
         </section>
 
-        <!-- PÁGINA RAÇAS -->
+        <!-- RAÇAS PAGE -->
         <section id="racas" class="page">
-            <h2>👤 Raças Jogáveis</h2>
-            <p class="section-desc">4 raças ancestrais com habilidades próprias</p>
-            <div class="cards-grid" id="racasContainer"></div>
+            <div class="container">
+                <h2 class="page-title">Raças Jogáveis</h2>
+                <p class="page-subtitle">Cada raça possui habilidades e afinidades únicas</p>
+                <div id="racasGrid" class="cards-grid"></div>
+            </div>
         </section>
 
-        <!-- PÁGINA GUIA -->
+        <!-- GUIA PAGE -->
         <section id="guia" class="page">
-            <h2>📖 Guia de Início</h2>
-            <div class="guide-steps">
-                <div class="guide-step">
-                    <div class="step-number">1️⃣</div>
-                    <h3>Baixe Minecraft Bedrock</h3>
-                    <p>Adquira a edição Bedrock na Microsoft Store, PlayStation Store ou App Store.</p>
-                </div>
-                <div class="guide-step">
-                    <div class="step-number">2️⃣</div>
-                    <h3>Entre no Discord</h3>
-                    <p>Acesse nosso servidor Discord para receber instruções e suporte da comunidade.</p>
-                    <a href="https://discord.gg/W9BHqwwFq4" target="_blank" class="btn-primary">Entrar no Discord</a>
-                </div>
-                <div class="guide-step">
-                    <div class="step-number">3️⃣</div>
-                    <h3>Escolha Reino, Classe e Raça</h3>
-                    <p>Explore os reinos, classes e raças disponíveis e escolha sua combinação.</p>
-                </div>
-                <div class="guide-step">
-                    <div class="step-number">4️⃣</div>
-                    <h3>Conheça as Regras</h3>
-                    <p>Leia nosso código de conduta e regras no Discord antes de entrar. </p>
-                </div>
-                <div class="guide-step">
-                    <div class="step-number">5️⃣</div>
-                    <h3>Conecte ao Servidor</h3>
-                    <p id="serverIpGuide" class="server-ip">IP: <strong id="ipPlaceholder">Em breve! </strong></p>
-                </div>
-            </div>
+            <div class="container">
+                <h2 class="page-title">Guia de Início</h2>
+                <p class="page-subtitle">Siga estes passos para começar sua jornada</p>
+                
+                <div class="guide-steps">
+                    <div class="guide-step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Baixe o Minecraft Bedrock</h3>
+                            <p>Certifique-se de ter a versão mais recente do Minecraft Bedrock Edition instalada em sua plataforma.</p>
+                        </div>
+                    </div>
 
-            <div class="rules-section">
-                <h3>⚠️ Regras Básicas</h3>
-                <ul>
-                    <li>✓ Respeito a todos os jogadores</li>
-                    <li>✓ Proibido grief e roubo</li>
-                    <li>✓ Proibido spamming no chat</li>
-                    <li>✓ Proibido glitches e exploits</li>
-                    <li>✓ Diversão acima de tudo! </li>
-                </ul>
+                    <div class="guide-step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Entre no Discord</h3>
+                            <p>Junte-se à nossa comunidade para receber atualizações e suporte.</p>
+                            <a href="#" class="btn btn-small btn-primary" id="guideDiscordBtn">Entrar no Discord</a>
+                        </div>
+                    </div>
+
+                    <div class="guide-step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Conecte-se ao Servidor</h3>
+                            <div class="server-ip">
+                                <label>IP do Servidor:</label>
+                                <div class="ip-box" id="serverIP">Em breve - Aguarde o lançamento!</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="guide-step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3>Escolha seu Reino, Classe e Raça</h3>
+                            <p>Ao entrar no servidor, você poderá escolher entre 4 reinos, 8 classes e 4 raças.</p>
+                        </div>
+                    </div>
+
+                    <div class="guide-step">
+                        <div class="step-number">5</div>
+                        <div class="step-content">
+                            <h3>Leia as Regras</h3>
+                            <p>Use o comando <code>/regras</code> no servidor para conhecer nossas regras básicas.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="guide-rules">
+                    <h3>Regras Básicas</h3>
+                    <ul>
+                        <li>✅ Respeite todos os jogadores</li>
+                        <li>✅ Proibido uso de hacks ou cheats</li>
+                        <li>✅ Não faça spam no chat</li>
+                        <li>✅ Jogue limpo e se divirta!</li>
+                    </ul>
+                </div>
             </div>
         </section>
 
-        <!-- PÁGINA LOJA VIP -->
+        <!-- LOJA VIP PAGE -->
         <section id="loja" class="page">
-            <h2>💎 Loja VIP</h2>
-            <p class="section-desc">Aumente sua progressão com planos VIP (não é pay-to-win! )</p>
-
-            <div class="shop-tabs">
-                <button class="tab-btn active" data-tab="catalogo">📦 Catálogo</button>
-                <button class="tab-btn" data-tab="carrinho">🛒 Carrinho</button>
-                <button class="tab-btn" data-tab="meus-vips">✓ Meus VIPs</button>
-            </div>
-
-            <!-- CATÁLOGO -->
-            <div id="catalogo" class="tab-content active">
-                <div class="vip-note">
-                    <p>📌 <strong>Transparência:</strong> Nossos planos VIP oferecem benefícios de progressão inicial, conveniência e cosméticos.  Não há vantagem competitiva!</p>
+            <div class="container">
+                <h2 class="page-title">Loja VIP</h2>
+                <p class="page-subtitle">Acelere sua jornada com benefícios exclusivos</p>
+                
+                <div class="vip-notice">
+                    <strong>🎯 Transparência:</strong> Os VIPs oferecem conveniência e cosméticos, não vantagens injustas. Todos os itens são obtíveis jogando normalmente.
                 </div>
-                <div class="vip-cards" id="vipCatalogo"></div>
-            </div>
 
-            <!-- CARRINHO -->
-            <div id="carrinho" class="tab-content">
-                <div id="carritoItems"></div>
-                <div id="carritoVazio" class="empty-state">
-                    <p>🛒 Seu carrinho está vazio</p>
+                <div id="lojaGrid" class="vip-grid"></div>
+
+                <!-- CARRINHO -->
+                <div id="carrinho" class="carrinho"></div>
+
+                <!-- MEUS VIPS -->
+                <div class="meus-vips">
+                    <h3>Meus VIPs</h3>
+                    <div id="meusVipsLista"></div>
                 </div>
-            </div>
 
-            <!-- MEUS VIPs -->
-            <div id="meus-vips" class="tab-content">
-                <div id="meusVipsContainer"></div>
+                <!-- ADMIN PANEL -->
+                <div class="admin-section">
+                    <button class="btn btn-admin" id="adminLoginBtn">Painel Admin</button>
+                    <div id="adminPanel" class="admin-panel" style="display:none;"></div>
+                </div>
             </div>
         </section>
 
-        <!-- PÁGINA CONTATO -->
+        <!-- CONTATO PAGE -->
         <section id="contato" class="page">
-            <h2>📧 Candidaturas & Contato</h2>
-            <p class="section-desc">Interested em fazer parte do time Umbralys? </p>
+            <div class="container">
+                <h2 class="page-title">Contato & Recrutamento</h2>
+                <p class="page-subtitle">Quer fazer parte da equipe Umbralys?</p>
+                
+                <form id="contatoForm" class="contato-form">
+                    <div class="form-group">
+                        <label for="nome">Nome Completo *</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
 
-            <form id="contactForm" class="contact-form">
-                <div class="form-group">
-                    <label for="nome">Nome Completo *</label>
-                    <input type="text" id="nome" name="nome" required>
+                    <div class="form-group">
+                        <label for="email">E-mail *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cargo">Cargo de Interesse *</label>
+                        <select id="cargo" name="cargo" required>
+                            <option value="">Selecione...</option>
+                            <option value="moderador">Moderador</option>
+                            <option value="builder">Builder</option>
+                            <option value="desenvolvedor">Desenvolvedor</option>
+                            <option value="designer">Designer</option>
+                            <option value="youtuber">YouTuber/Divulgador</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="disponibilidade">Disponibilidade Semanal *</label>
+                        <input type="text" id="disponibilidade" name="disponibilidade" placeholder="Ex: 20 horas/semana" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem/Apresentação *</label>
+                        <textarea id="mensagem" name="mensagem" rows="6" required placeholder="Conte sobre você e por que quer fazer parte da equipe..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-large">Enviar Candidatura</button>
+                </form>
+
+                <div class="contato-info">
+                    <p><strong>Contato direto:</strong> <a href="mailto:umbralys45@gmail.com">umbralys45@gmail.com</a></p>
                 </div>
-
-                <div class="form-group">
-                    <label for="email">E-mail *</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="cargo">Cargo de Interesse *</label>
-                    <select id="cargo" name="cargo" required>
-                        <option value="">Selecione um cargo... </option>
-                        <option value="builder">🏗️ Builder</option>
-                        <option value="scriptwriter">✍️ Script Writer</option>
-                        <option value="moderator">🔨 Moderador</option>
-                        <option value="designer">🎨 Designer</option>
-                        <option value="comunidade">👥 Community Manager</option>
-                        <option value="outro">📝 Outro</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label for="disponibilidade">Disponibilidade *</label>
-                    <select id="disponibilidade" name="disponibilidade" required>
-                        <option value="">Selecione... </option>
-                        <option value="parttime">Part-time (< 10h/semana)</option>
-                        <option value="fulltime">Full-time (>= 10h/semana)</option>
-                        <option value="voluntario">Voluntário</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label for="mensagem">Mensagem / Portfólio</label>
-                    <textarea id="mensagem" name="mensagem" rows="5" placeholder="Conte sobre você e seus projetos!"></textarea>
-                </div>
-
-                <button type="submit" class="btn-primary">Enviar Candidatura</button>
-            </form>
+            </div>
         </section>
     </main>
 
-    <!-- PAINEL ADMIN (OCULTO POR PADRÃO) -->
-    <div id="adminPanel" class="admin-panel hidden">
-        <div class="admin-header">
-            <h2>⚙️ Painel Admin</h2>
-            <button id="adminClose" class="admin-close">✕</button>
-        </div>
-
-        <div class="admin-tabs">
-            <button class="admin-tab-btn active" data-admin-tab="login">🔐 Login</button>
-            <button class="admin-tab-btn" data-admin-tab="pedidos">📋 Pedidos</button>
-            <button class="admin-tab-btn" data-admin-tab="vips-manuais">👤 VIPs Manuais</button>
-            <button class="admin-tab-btn" data-admin-tab="logs">📊 Logs</button>
-            <button class="admin-tab-btn" data-admin-tab="config">⚙️ Configuração</button>
-        </div>
-
-        <!-- LOGIN -->
-        <div id="login" class="admin-tab-content active">
-            <form id="adminLoginForm">
-                <input type="password" id="adminPassword" placeholder="Senha de Admin" required>
-                <button type="submit" class="btn-primary">Entrar</button>
-            </form>
-        </div>
-
-        <!-- PEDIDOS -->
-        <div id="pedidos" class="admin-tab-content hidden">
-            <h3>Pedidos Pendentes</h3>
-            <div id="pedidosList"></div>
-        </div>
-
-        <!-- VIPs MANUAIS -->
-        <div id="vips-manuais" class="admin-tab-content hidden">
-            <h3>Conceder VIP Manualmente</h3>
-            <form id="adminVipForm">
-                <input type="email" id="vipEmail" placeholder="E-mail do jogador" required>
-                <select id="vipPlano" required>
-                    <option value="">Selecione um plano</option>
-                    <option value="vip">VIP Padrão</option>
-                    <option value="vip-plus">VIP Plus</option>
-                    <option value="vip-master">VIP Master</option>
-                </select>
-                <button type="submit" class="btn-primary">Conceder</button>
-            </form>
-        </div>
-
-        <!-- LOGS -->
-        <div id="logs" class="admin-tab-content hidden">
-            <h3>Eventos do Sistema</h3>
-            <div id="logsList" class="logs-list"></div>
-        </div>
-
-        <!-- CONFIGURAÇÃO -->
-        <div id="config" class="admin-tab-content hidden">
-            <h3>Configurações</h3>
-            <form id="adminConfigForm">
-                <div class="form-group">
-                    <label for="adminIp">IP do Servidor</label>
-                    <input type="text" id="adminIp" placeholder="xxx.xxx.xxx.xxx:porta">
-                </div>
-                <div class="form-group">
-                    <label for="adminVersion">Versão Minecraft</label>
-                    <input type="text" id="adminVersion" placeholder="1.21.0">
-                </div>
-                <button type="submit" class="btn-primary">Salvar</button>
-            </form>
-        </div>
-    </div>
-
-    <!-- OVERLAY PARA MODAL -->
-    <div id="overlay" class="overlay hidden"></div>
-
     <!-- FOOTER -->
     <footer class="footer">
-        <p>&copy; 2025 Umbralys MMORPG | Servidor Minecraft Bedrock Oficial</p>
-        <p>Desenvolvido com ⚔ para a comunidade Minecraft</p>
+        <div class="container">
+            <p>&copy; 2025 Umbralys. Todos os direitos reservados.</p>
+            <p>Servidor de Minecraft Bedrock não oficial. Não afiliado à Mojang ou Microsoft.</p>
+        </div>
     </footer>
 
-    <script src="data. js"></script>
+    <!-- SCRIPTS -->
+    <script src="data.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
